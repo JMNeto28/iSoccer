@@ -3,7 +3,7 @@ public class Soccer {
 
 			public static void main(String[] args) 
 			{
-				int controle = -1, controle2 = -1, quantosbus = 0, controle3 = -1,controle4 = -1, numFunc = 0, numSocio = 0,  escolherFuncio = 0, numPreparadores = 0, numCozinheiros=0, quantosestadios = 0, numAdvogados = 0;
+				int controle = -1, controle2 = -1, quantosbus = 0, controle3 = -1,controle4 = -1, numFunc = 0, numSocio = 0, escolhaCt = 0,  escolherFuncio = 0,numDormi=0, numPreparadores = 0, numCozinheiros=0, quantosestadios = 0, numAdvogados = 0, numEspec=0, numBanheiros=0, numLanchonetes=0;
 				String login, senha; 
 				
 				Scanner sc = new Scanner(System.in);
@@ -15,6 +15,8 @@ public class Soccer {
 				login = sc.next();
 				System.out.println("Senha:\n");
 				senha = sc.next();
+				
+		while((login.equals("joao")&& senha.equals("senha"))){
 			while (escolherFuncio != 5)
 			{
 				System.out.println("Escolha a Funcionalidade: \n1- Adcionar funcionarios\n2- Socios\n3- Recursos Fisicos\n4- Relatorios\n5- Fechar programa\n");
@@ -214,9 +216,9 @@ public class Soccer {
 				else if (escolherFuncio == 3)
 				{
 					System.out.println("1- Onibus\n2- Estádio\n3- CT\n");
-					controle3 = sc.nextInt(); // para ler o caso do switch
+					controle3 = sc.nextInt(); // para ler o ca so do switch
 					sc.nextLine(); // equivale ao getchar em C
-					int verificar = 0, verificar2 = 0, verificar3 = 0, verificar4 = 0, verificar5=0, numEspec=0, numBanheiros=0, numLanchonetes=0, escolhaCt = 0, numDormi=0;
+					int verificar = 0, verificar2 = 0, verificar3 = 0, verificar4 = 0, verificar5=0;
 					
 					 switch(controle3)
 					 {
@@ -355,7 +357,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Tecnico")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 6; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -366,7 +368,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Jogador")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 7; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -382,7 +384,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Medico")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 6; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -393,7 +395,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Preparador fisico")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 6; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -404,7 +406,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Motorista")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 6; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -415,7 +417,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Cozinheiro")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 6; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -426,7 +428,7 @@ public class Soccer {
 							 {
 								if(tabela[i][0] == "Advogado")
 								{
-									System.out.printf("------%d------\n", i);
+									System.out.printf("------------\n", i);
 									for (j=0; j < 6; j++)
 									{
 										System.out.printf("%s\n", tabela[i][j]);
@@ -434,7 +436,50 @@ public class Soccer {
 								}
 							 }
 						 }
-						
+						 break;
+						 
+					case 2: // Recursos físicos
+						System.out.println("Relatório sobre:\n1- Transporte\n2- CT\n3- Estádio");
+						int escolhendo;
+						escolhendo = sc.nextInt(); // para ler o caso do switch
+						sc.nextLine(); // equivale ao getchar em C
+						if(escolhendo == 1)
+						{
+							System.out.println("Queremos saber quantos ônibus temos disponivel para uso?\n1- SIM\n2- NÃO");
+							int saber;
+							saber = sc.nextInt(); // para ler o caso do switch
+							sc.nextLine(); // equivale ao getchar em C
+							if(saber == 1)
+							{
+								System.out.printf("Temos %d ônibus para o uso da nossa equipe!\n", quantosbus);
+							}
+						}
+						if(escolhendo == 2)
+						{
+							System.out.println("Informações sobre o CT:");
+							if(escolhaCt >= 1)
+							{
+								System.out.printf("Temos %d CT's disponiveis, com %d dormitorios para uso dos nossos atletas\n", escolhaCt, numDormi);
+							}
+							else
+							{
+								System.out.println("Não temos estádio!");
+							}
+						}
+						if(escolhendo == 3)
+						{
+							System.out.println("Informações sobre o estádio:");
+							if(quantosestadios >= 1)
+							{
+								System.out.printf("Temos %d estádios, com uma estrutura para acolher %d espectadores tendo %d de banheiros disponíveis ao público e %d lanchonetes espalhadas pelo entorno do estádio\n",quantosestadios , numEspec, numBanheiros, numLanchonetes);
+							}
+							else 
+							{
+								System.out.println("Não temos estádio!");
+							}
+						}
+						break;
+							
 					
 					
 					
@@ -449,7 +494,9 @@ public class Soccer {
 				}
 				 
 			}// chaves do while de encerramento	
-				 
+			
+			} // while do login e senha
+			System.out.println("Login ou senha errados!");	 
 			}
 		}
 
