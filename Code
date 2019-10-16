@@ -10,16 +10,16 @@ public class Soccer {
 				String[][] tabela = new String[100][20]; // essa é dos funcionários
 				String[][] socio = new String[100][20]; // dos sócios
 				String[][] recursos = new String[100][20]; // dos recursos
-				System.out.println("Por favor, insira:\n");
-				System.out.println("Login:\n");
+				System.out.println("Por favor, insira:");
+				System.out.println("Login:");
 				login = sc.next();
-				System.out.println("Senha:\n");
+				System.out.println("Senha:");
 				senha = sc.next();
 				
-		while((login.equals("joao")&& senha.equals("senha"))){
+		while((login.equals("login")&& senha.equals("senha"))){
 			while (escolherFuncio != 5)
 			{
-				System.out.println("Escolha a Funcionalidade: \n1- Adcionar funcionarios\n2- Socios\n3- Recursos Fisicos\n4- Relatorios\n5- Fechar programa\n");
+				System.out.println("Escolha a Funcionalidade: \n1- Adcionar funcionarios\n2- Socios\n3- Recursos Fisicos\n4- Relatorios\n5- Fechar programa");
 				escolherFuncio = sc.nextInt();
 				sc.nextLine();
 				
@@ -35,47 +35,47 @@ public class Soccer {
 				 {
 				 case 1: // Adicionar presidente
 					 tabela[numFunc][0] = "Presidente";
-					 System.out.println("Nome do presidente:\n");
+					 System.out.println("Nome do presidente:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail presidente:\n");
+					 System.out.println("Insira email presidente:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do presidente:\n");
+					 System.out.println("Insira CPF do presidente:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira salario do presidente: (EX: 13000)\n");
+					 System.out.println("Insira salario do presidente: (EX: 13000)");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira telefone do presidente: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do presidente: (EX: 8299998888)");
 					 tabela[numFunc][5] = sc.nextLine();
 					 numFunc++;
 					 break;
 					
 				 case 2: // Adicionar médico
 					 tabela[numFunc][0] = "Medico";
-					 System.out.println("Nome do médico:\n");
+					 System.out.println("Nome do médico:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail médico:\n");
+					 System.out.println("Insira email médico:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do médico:\n");
+					 System.out.println("Insira CPF do médico:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira CRM do médico:\n");
+					 System.out.println("Insira CRM do médico:");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira salario do médico: (EX: 13000)\n");
+					 System.out.println("Insira salario do médico: (EX: 13000)");
 					 tabela[numFunc][5] = sc.nextLine();
-					 System.out.println("Insira telefone do médico: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do médico: (EX: 8299998888)");
 					 tabela[numFunc][6] = sc.nextLine();
 					 numFunc++;
 					 break;
 					 
 				 case 3: // Adicionar técnico 
 					 tabela[numFunc][0] = "Tecnico";
-					 System.out.println("Nome do técnico:\n");
+					 System.out.println("Nome do técnico:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail técnico:\n");
+					 System.out.println("Insira email técnico:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do técnico:\n");
+					 System.out.println("Insira CPF do técnico:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira salario do técnico: (EX: 13000)\n");
+					 System.out.println("Insira salario do técnico: (EX: 13000)");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira telefone do técnico: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do técnico: (EX: 8299998888)");
 					 tabela[numFunc][5] = sc.nextLine();
 					 numFunc++;
 					 break;
@@ -88,15 +88,15 @@ public class Soccer {
 					 while(numPreparadores > 0)
 					 {
 						 tabela[numFunc][0] = "Preparador fisico";
-					 System.out.println("Nome do Preparador físico:\n");
+					 System.out.println("Nome do Preparador físico:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail Preparador físico:\n");
+					 System.out.println("Insira email Preparador físico:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do Preparador físico:\n");
+					 System.out.println("Insira CPF do Preparador físico:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira salario do Preparador físico: (EX: 13000)\n");
+					 System.out.println("Insira salario do Preparador físico: (EX: 13000)");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira telefone do Preparador físico: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do Preparador físico: (EX: 8299998888)");
 					 tabela[numFunc][5] = sc.nextLine();
 					 numFunc++;
 					 numPreparadores--;
@@ -105,17 +105,17 @@ public class Soccer {
 					 
 				 case 5: // Motorista
 					 tabela[numFunc][0] = "Motorista";
-					 System.out.println("Nome do Motorista:\n");
+					 System.out.println("Nome do Motorista:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail Motorista:\n");
+					 System.out.println("Insira email Motorista:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do Motorista:\n");
+					 System.out.println("Insira CPF do Motorista:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira salario do Motorista: (EX: 13000)\n");
+					 System.out.println("Insira salario do Motorista: (EX: 13000)");
 					 tabela[numFunc][4] = sc.nextLine();
 					 System.out.println("Insira CNH do Motorista:\n");
 					 tabela[numFunc][5] = sc.nextLine();
-					 System.out.println("Insira telefone do Motorista: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do Motorista: (EX: 8299998888)");
 					 tabela[numFunc][6] = sc.nextLine();
 					 numFunc++;
 					 break;
@@ -127,15 +127,15 @@ public class Soccer {
 					 while(numCozinheiros > 0)
 					 {
 						 tabela[numFunc][0] = "Cozinheiro";
-					 System.out.println("Nome do Cozinheiros:\n");
+					 System.out.println("Nome do Cozinheiros:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail Cozinheiros:\n");
+					 System.out.println("Insira email Cozinheiros:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do Cozinheiros:\n");
+					 System.out.println("Insira CPF do Cozinheiros:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira salario do Cozinheiros: (EX: 13000)\n");
+					 System.out.println("Insira salario do Cozinheiros: (EX: 13000)");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira telefone do Cozinheiros: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do Cozinheiros: (EX: 8299998888)");
 					 tabela[numFunc][5] = sc.nextLine();
 					 numFunc++;
 					 numCozinheiros--;
@@ -143,21 +143,21 @@ public class Soccer {
 					 break;
 					 
 				 case 7: // Advogados
-					 System.out.println("Quantos Advogados são?\n");
+					 System.out.println("Quantos Advogados são?");
 					 numAdvogados = sc.nextInt();
 					 sc.nextLine();
 					 while(numAdvogados > 0)
 					 {
 						 tabela[numFunc][0] = "Advogado"; 
-					 System.out.println("Nome do Advogado:\n");
+					 System.out.println("Nome do Advogado:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Insira imail Advogado:\n");
+					 System.out.println("Insira email Advogado:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira CPF do Advogado:\n");
+					 System.out.println("Insira CPF do Advogado:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira salario do Advogado: (EX: 13000)\n");
+					 System.out.println("Insira salario do Advogado: (EX: 13000)");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira telefone do Advogado: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do Advogado: (EX: 8299998888)");
 					 tabela[numFunc][5] = sc.nextLine();
 					 numFunc++;
 					 numAdvogados--;
@@ -166,19 +166,19 @@ public class Soccer {
 					 
 				 case 8: // jogador
 					 tabela[numFunc][0] = "Jogador";
-					 System.out.println("Nome do Jogador:\n");
+					 System.out.println("Nome do Jogador:");
 					 tabela[numFunc][1] = sc.nextLine();
-					 System.out.println("Posição do Jogador:\n");
+					 System.out.println("Posição do Jogador:");
 					 tabela[numFunc][2] = sc.nextLine();
-					 System.out.println("Insira imail Jogador:\n");
+					 System.out.println("Insira email Jogador:");
 					 tabela[numFunc][3] = sc.nextLine();
-					 System.out.println("Insira CPF do Jogador:\n");
+					 System.out.println("Insira CPF do Jogador:");
 					 tabela[numFunc][4] = sc.nextLine();
-					 System.out.println("Insira salario do Jogador: (EX: 13000)\n");
+					 System.out.println("Insira salario do Jogador: (EX: 13000)");
 					 tabela[numFunc][5] = sc.nextLine();
-					 System.out.println("Insira telefone do Jogador: (EX: 8299998888)\n");
+					 System.out.println("Insira telefone do Jogador: (EX: 8299998888)");
 					 tabela[numFunc][6] = sc.nextLine();
-					 System.out.println("O jogador está apto para jogar?:\n");
+					 System.out.println("O jogador está apto para jogar?:");
 					 tabela[numFunc][7] = sc.nextLine();
 					 numFunc++;
 					 break;
@@ -193,19 +193,19 @@ public class Soccer {
 					int con;
 					
 
-						 System.out.println("Nome do Socio:\n");
+						 System.out.println("Nome do Socio:");
 						 socio[numSocio][0] = sc.nextLine();
-						 System.out.println("Insira imail Socio:\n");
+						 System.out.println("Insira email Socio:");
 						 socio[numSocio][1] = sc.nextLine();
-						 System.out.println("Insira CPF do Socio:\n");
+						 System.out.println("Insira CPF do Socio:");
 						 socio[numSocio][2] = sc.nextLine();
-						 System.out.println("Insira telefone do Socio: (EX: 8299998888)\n");
+						 System.out.println("Insira telefone do Socio: (EX: 8299998888)");
 						 socio[numSocio][3] = sc.nextLine();
-						 System.out.println("Insira endereço do socio:\n");
+						 System.out.println("Insira endereço do socio:");
 						 socio[numSocio][4] = sc.nextLine();
-						 System.out.println("Insira valor de contribuição\n");
+						 System.out.println("Insira valor de contribuição");
 						 socio[numSocio][5] = sc.nextLine();
-						 System.out.println("Sócio adimplente digite 1, ou se for inadimplente digite 2?\n");
+						 System.out.println("Sócio adimplente digite 1, ou se for inadimplente digite 2?");
 						 {
 							con = sc.nextInt(); // para ler o caso do switch
 							sc.nextLine(); // equivale ao getchar em C
@@ -224,7 +224,7 @@ public class Soccer {
 				
 				else if (escolherFuncio == 3)
 				{
-					System.out.println("1- Onibus\n2- Estádio\n3- CT\n");
+					System.out.println("1- Onibus\n2- Estádio\n3- CT");
 					controle3 = sc.nextInt(); // para ler o ca so do switch
 					sc.nextLine(); // equivale ao getchar em C
 					int verificar = 0, verificar2 = 0, verificar3 = 0, verificar4 = 0, verificar5=0;
@@ -232,18 +232,18 @@ public class Soccer {
 					 switch(controle3)
 					 {
 					 case 1: //Busão
-						 System.out.println("1- Adcionar/verificar onibus\n2- Verificar disponibilidade\n");
+						 System.out.println("1- Adcionar/verificar onibus\n2- Verificar disponibilidade");
 						 verificar = sc.nextInt();
 						 sc.nextLine();
 						 if (verificar == 1)
 						 {
-							 System.out.println("1- Adicionar\n2- Verificar\n");
+							 System.out.println("1- Adicionar\n2- Verificar");
 							 verificar2 = sc.nextInt();
 							 sc.nextLine();
 							 if(verificar2 == 1)
 							 {
 								 quantosbus++;
-								 System.out.println("Adicionou um onibus ao clube!\n");
+								 System.out.println("Adicionou um onibus ao clube!");
 							 }
 							 if(verificar2 == 2)
 							 {
@@ -258,24 +258,24 @@ public class Soccer {
 							 }
 							 else
 							 {
-								 System.out.println("Não temos disponibilidade de onibus!\n");
+								 System.out.println("Não temos disponibilidade de onibus!");
 							 }
 						 }
 						 break;
 						 
 					 case 2: // estádio
-						 System.out.println("1- Adicionar/buscar o estádio\n2- Verificar disponibilidade\n3- Capacidades/Banheiros/Lanchonetes\n");
+						 System.out.println("1- Adicionar/buscar o estádio\n2- Verificar disponibilidade\n3- Capacidades/Banheiros/Lanchonetes");
 						 verificar3 = sc.nextInt();
 						 sc.nextLine();
 						 if(verificar3 == 1)
 						 {
-							 System.out.println("1- Adicionar\n2- Verificar\n");
+							 System.out.println("1- Adicionar\n2- Verificar");
 							 verificar4 = sc.nextInt();
 							 sc.nextLine();
 							 if(verificar4 == 1)
 							 {
 								 quantosestadios++;
-								 System.out.println("Adicionou um estadio ao clube!\n");
+								 System.out.println("Adicionou um estadio ao clube!");
 							 }
 							 if(verificar4 == 2)
 							 {
@@ -290,49 +290,49 @@ public class Soccer {
 							 }
 							 else
 							 {
-								 System.out.println("Não temos estádios ou disponibilidades para jogos em casa!\n");
+								 System.out.println("Não temos estádios ou disponibilidades para jogos em casa!");
 							 }
 						 }
 						 else
 						 {
 							 if(quantosestadios >= 1)
 							 {
-							 System.out.println("Quantos torcedores podem assistir o jogo nesse estádio?\n");
+							 System.out.println("Quantos torcedores podem assistir o jogo nesse estádio?");
 							 numEspec = sc.nextInt();
 							 sc.nextLine();
-							 System.out.println("Quantos banheiros temos nesse estádio?\n");
+							 System.out.println("Quantos banheiros temos nesse estádio?");
 							 numBanheiros = sc.nextInt();
 							 sc.nextLine();
-							 System.out.println("Quantos lanchonetes temos nesse estádio?\n");
+							 System.out.println("Quantos lanchonetes temos nesse estádio?");
 							 numLanchonetes = sc.nextInt();
 							 sc.nextLine();
 							 }
 							 else
 							 {
-								 System.out.println("Não temos estádio\n");
+								 System.out.println("Não temos estádio");
 							 }
 						 }
 						 break;
 						 
 					 case 3: //CT
-						 System.out.println("1- Disponibilidade de CT\n2- Dormitorios disponiveis\n");
+						 System.out.println("1- Disponibilidade de CT\n2- Dormitorios disponiveis");
 						 verificar5 = sc.nextInt();
 						 sc.nextLine();
 						 if(verificar5 == 1)
 						 {
-							 System.out.println("Temos CT's?\n");
-							 System.out.println("1- SIM\n 2- NÃO\n");
+							 System.out.println("Temos CT's?");
+							 System.out.println("1- SIM\n 2- NÃO");
 							 escolhaCt = sc.nextInt();
 							 sc.nextLine();
 							 if(escolhaCt == 1)
 							 {
-								 System.out.println("Dormitórios disponíveis?\n");
+								 System.out.println("Dormitórios disponíveis?");
 								 numDormi = sc.nextInt();
 								 sc.nextLine();
 							 }
 							 else
 							 {
-								 System.out.println("Não temos dormitórios, procurar hotel mais próximo!\n");
+								 System.out.println("Não temos dormitórios, procurar hotel mais próximo!");
 							 }
 						 }
 						 else
@@ -504,14 +504,7 @@ public class Soccer {
 								}
 						 }
 						 break;
-						
-						
-						
-						
-							
-					
-					
-					
+				
 					}
 					
 				} // chaves do else if de relatório (4)
