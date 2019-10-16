@@ -3,7 +3,7 @@ public class Soccer {
 
 			public static void main(String[] args) 
 			{
-				int controle = -1, controle2 = -1, quantosbus = 0, controle3 = -1,controle4 = -1, numFunc = 0, numSocio = 0, escolhaCt = 0,  escolherFuncio = 0,numDormi=0, numPreparadores = 0, numCozinheiros=0, quantosestadios = 0, numAdvogados = 0, numEspec=0, numBanheiros=0, numLanchonetes=0;
+				int controle = -1, controle2 = -1, quantosbus = 0, controle3 = -1,controle4 = -1, numFunc = 0, numSocio = 0, escolhaCt = 0,  escolherFuncio = 0,numDormi=0, numPreparadores = 0, numCozinheiros=0, quantosestadios = 0, numAdvogados = 0, numEspec=0, numBanheiros=0, numLanchonetes=0,  contadoradi =0,  contadorina = 0;
 				String login, senha; 
 				
 				Scanner sc = new Scanner(System.in);
@@ -189,12 +189,10 @@ public class Soccer {
 				
 				else if (escolherFuncio == 2) 
 				{
-					controle2 = sc.nextInt(); // para ler o caso do switch
-					sc.nextLine(); // equivale ao getchar em C
 					
-					 switch(controle2)
-					 {
-					 case 1: // adicionar sócio
+					int con;
+					
+
 						 System.out.println("Nome do Socio:\n");
 						 socio[numSocio][0] = sc.nextLine();
 						 System.out.println("Insira imail Socio:\n");
@@ -207,10 +205,21 @@ public class Soccer {
 						 socio[numSocio][4] = sc.nextLine();
 						 System.out.println("Insira valor de contribuição\n");
 						 socio[numSocio][5] = sc.nextLine();
+						 System.out.println("Sócio adimplente digite 1, ou se for inadimplente digite 2?\n");
+						 {
+							con = sc.nextInt(); // para ler o caso do switch
+							sc.nextLine(); // equivale ao getchar em C
+							 if(con == 1)
+							 {
+								 contadoradi++;
+							 }
+							 else {
+								 contadorina++;
+							 }
+						 }
 						 numSocio++;
-						 break;
+						
 					 
-					 }
 				} // chaves do else if socio torcedor (2)
 				
 				else if (escolherFuncio == 3)
@@ -479,6 +488,26 @@ public class Soccer {
 							}
 						}
 						break;
+						
+					case 3:
+						System.out.println("Relatório sobre sócio torcedor:");
+						System.out.printf("Quantidade de sócios: %d\n", numSocio);
+						System.out.printf("Quantidade de sócios adimplentes: %d\n", contadoradi);
+						System.out.printf("Quantidade de sócios inadimplentes: %d\n", contadorina);
+						System.out.println("Dados gerais dos sócios");
+						 for (i=0; i < numSocio; i++)
+						 {
+								System.out.printf("------------\n", i);
+								for (j=0; j < 6; j++)
+								{
+									System.out.printf("%s\n", socio[i][j]);
+								}
+						 }
+						 break;
+						
+						
+						
+						
 							
 					
 					
